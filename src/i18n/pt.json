@@ -1,0 +1,281 @@
+{
+    "title": {
+      "index": "Home",
+      "downloads": {
+        "index": "Downloads",
+        "all": "Explorador de builds",
+        "leaves": "Downloads do mafaka"
+      },
+      "sponsor": "Patrocinar",
+      "team": "Equipe",
+      "community": "Comunidade",
+      "contribute": "Contribuindo"
+    },
+    "index": {
+      "title": {
+        "line1": "Software puro.",
+        "line2": "Nascido para o vanilla."
+      },
+      "description": "MafakaMC melhora o ecossistema do Minecraft com software rápido, seguro e estável, oferecendo lançamentos rápidos e suporte útil como o mais inovador.",
+      "downloads": "Downloads",
+      "documentation": "Documentação",
+      "software": {
+        "title": "Seu servidor merece o <0>brilho.</0>"
+      },
+      "image": {
+        "1": {
+          "title": {
+            "powering": "Impulsionando",
+            "players": "jogadores"
+          },
+          "description": "O software do MafakaMC é projetado com utilidade e desempenho em mente, sendo capaz de lidar com qualquer coisa que você jogar nele."
+        }
+      }
+    },
+    "downloads": {
+      "index": {
+        "title": "Downloads",
+        "description": "Selecione o software que você deseja baixar.",
+        "softwares": {
+          "leaves": {
+            "description": "Mafaka é um servidor de jogo Minecraft, destinado a corrigir propriedades quebradas da versão vanilla."
+          }
+        }
+      },
+      "all": {
+        "legacy": "Versões legadas não são suportadas. Prossiga por sua conta e risco!",
+        "experimental": "Versões experimentais não estão prontas para servidores de produção. Prossiga por sua conta e risco!"
+      },
+      "leaves": {
+        "description": "Baixe o Mafaka, nosso software de servidor Minecraft que oferece desempenho e estabilidade incomparáveis.",
+        "experimentalWarning": "Baixe versões experimentais do Mafaka, nosso software de servidor Minecraft que oferece desempenho e estabilidade incomparáveis. Prossiga com cautela!"
+      }
+    },
+    "software": {
+      "leaves": {
+        "index": {
+          "title": {
+            "line1": "Seguindo as propriedades vanilla",
+            "line2": "Servidor de Minecraft"
+          },
+          "description": "Mafaka é um servidor de Minecraft baseado no Paper, com o objetivo de corrigir propriedades quebradas do vanilla.",
+          "why": {
+            "title": "Por que Mafaka?",
+            "reason": {
+              "1": {
+                "label": "É absurdamente rápido.",
+                "description": "Mafaka contém várias melhorias e otimizações que resultam em um aumento significativo no desempenho. Isso inclui o carregamento assíncrono de chunks, bem como grandes otimizações no motor de luz, funis, entidades e muito mais."
+              },
+              "2": {
+                "label": "Uma comunidade ativa e em crescimento",
+                "description": "Mafaka possui uma comunidade ativa e em crescimento de administradores de servidores e desenvolvedores. Se você encontrar algum problema, pode conversar conosco no Discord e obter suporte em tempo real."
+              },
+              "3": {
+                "label": "Uma API expandida",
+                "description": "Mafaka estende e melhora as APIs do Bukkit, Spigot e Paper para que você e seus desenvolvedores tenham mais recursos e funcionalidades ao seu alcance."
+              }
+            }
+          },
+          "image": {
+            "1": {
+              "title": "Começando",
+              "description": "Para começar com o Mafaka, você precisará baixar e instalar a versão mais recente do software do servidor. Quando estiver pronto, dê uma olhada na nossa documentação abrangente."
+            },
+            "2": {
+              "title": "Juntamente com uma comunidade de donos de servidores.",
+              "description": "Se você precisar de ajuda com as configurações do seu servidor, lag no servidor ou um guia para formatar o seu chat, nossa equipe experiente e a comunidade amigável estão sempre disponíveis para ajudar."
+            }
+          },
+          "button": {
+            "downloads": "Downloads",
+            "documentation": "Documentação",
+            "discord": "Entre no nosso Discord"
+          }
+        }
+      }
+    },
+    "sponsor": {
+      "title": "Patrocinador",
+      "description": "MafakaMC é uma comunidade aberta, e parte da gestão da comunidade envolve o pagamento por serviços, servidores e infraestrutura. Fazemos o possível para manter nossos custos razoáveis e sustentáveis, mas ainda assim, alguns custos são inevitáveis.",
+      "why": {
+        "title": "Por que você deve doar",
+        "reason": {
+          "1": {
+            "label": "Sustentabilidade",
+            "description": "As doações ajudam a manter o MafakaMC sustentável e aberto a todos. Somente aqueles que podem doar devem fazê-lo, e ninguém deve se sentir mal se não puder."
+          },
+          "2": {
+            "label": "Planos futuros",
+            "description": "Precisamos atualizar nossa hospedagem para atender à crescente demanda pelos nossos serviços e APIs. Isso aumentará os custos, os quais esperamos compensar com doações através do Patreon."
+          },
+          "3": {
+            "label": "Devolvendo",
+            "description": "Se recebermos mais em doações do que nossos custos mensais, podemos considerar distribuir os fundos para os contribuintes de maneira justa e transparente."
+          }
+        }
+      },
+      "sponsors": {
+        "title": "Nossos Patrocinadores",
+        "afdian": "Nossos patrocinadores do Afdian"
+      }
+    },
+    "team": {
+      "title": "Conheça nossa equipe",
+      "description": "Conheça os membros por trás do MafakaMC, uma organização de software para Minecraft focada em melhorar o ecossistema do jogo com software mais rápido e seguro.",
+      "core-team": {
+        "title": "Equipe Principal",
+        "description": "Os membros da Equipe Principal são responsáveis pela direção do projeto e pelas grandes decisões. Seja focando no código ou na comunidade, eles são essenciais para manter tudo funcionando e têm a palavra final em praticamente tudo."
+      },
+      "leaves-developers": {
+        "title": "Desenvolvedores do Mafaka",
+        "description": "Os Desenvolvedores Mafaka ajudam escrevendo código, revisando PRs e mantendo o projeto ativo. Ao contribuir com novos recursos e melhorar códigos antigos, eles fazem o Mafaka funcionar."
+      },
+      "web-developers": {
+        "title": "Desenvolvedores Web",
+        "description": "Os Desenvolvedores Web colocam o MafakaMC na supervia da informação. Através de seus esforços, você pode acessar o software do MafakaMC de forma mais conveniente."
+      },
+      "button": {
+        "sponsor": "Patrocinar"
+      },
+      "contributors": {
+        "title": "Contribuidores",
+        "description": "Contribuidores são aquelas pessoas que ajudaram a organização fazendo contribuições importantes para nossos repositórios de código. Desde adicionar um novo motor de redstone até enviar um PR para corrigir um bug sério, nossos contribuintes nos ajudaram a fornecer o melhor software possível."
+      },
+      "avatar": "o avatar de"
+    },
+    "community": {
+      "title": "Junte-se à nossa comunidade",
+      "description": "Estamos felizes em tê-lo como parte da comunidade MafakaMC! Por favor, leia nossas diretrizes da comunidade antes de participar.",
+      "discord": {
+        "description": "O Discord é uma opção popular para muitos jogadores se comunicarem entre si. Temos um servidor comunitário no Discord que qualquer pessoa pode entrar."
+      },
+      "giscus": {
+        "description": "Você pode usar o GitHub para deixar um comentário ou compartilhar algumas dicas aqui.",
+        "lang": "en"
+      },
+      "button": {
+        "guidelines": "Diretrizes da Comunidade",
+        "discord": "Entre no nosso Discord"
+      }
+    },
+    "contribute": {
+      "title": "Você pode contribuir",
+      "description": "Nossos projetos são baseados em contribuições da comunidade e não seriam possíveis sem elas. Existem várias maneiras de contribuir, mesmo sem conhecimento em programação.",
+      "donate": {
+        "title": "...Financeiramente",
+        "description": "MafakaMC usa o Patreon e o Afdian para gerenciar várias despesas recorrentes, principalmente relacionadas à infraestrutura."
+      },
+      "code": {
+        "title": "...Código",
+        "description": "Uma grande parte do código em nossos projetos é escrita pelos membros da comunidade, e nós agradecemos suas contribuições!"
+      },
+      "support": {
+        "title": "...Suporte",
+        "description": "Muitos usuários resultam em muitas perguntas. Todos são bem-vindos para responder perguntas ou fornecer suporte, seja no nosso servidor Discord ou no nosso grupo QQ."
+      },
+      "documentation": {
+        "title": "...Documentação",
+        "description": "Software em constante evolução precisa de documentação constantemente atualizada. Não importa se você deseja relatar informações faltando ou adicionar guias, sempre apreciamos a ajuda."
+      },
+      "button": {
+        "more": "Saiba mais",
+        "support": "Nossa comunidade",
+        "documentation": "Repositório de Documentação"
+      }
+    },
+    "components": {
+      "data": {
+        "SoftwareBuildChanges": {
+          "zero": "Nenhuma mudança"
+        },
+        "SoftwareBuildsTable": {
+          "build": "Build",
+          "changelog": "Changelog",
+          "timestamp": "Timestamp",
+          "download": "Download"
+        }
+      },
+      "input": {
+        "SoftwareDownloadButton": {
+          "download": "Download",
+          "build": "Build",
+          "copied": "Copiado",
+          "ghproxy": "Hospedado por ghproxy.com",
+          "label": "Outras variantes de download"
+        }
+      },
+      "layout": {
+        "NavBar": {
+          "software": "Software",
+          "documentation": "Docs",
+          "team": "Equipe",
+          "contribute": "Contribuindo",
+          "toggle": "Alternar navegação"
+        },
+        "Footer": {
+          "getting_started": {
+            "title": "Começando",
+            "downloads": "Downloads",
+            "documentation": "Documentação"
+          },
+          "community": {
+            "title": "Comunidade",
+            "our_community": "Nossa comunidade"
+          },
+          "MafakaMC": {
+            "our_team": "Nossa equipe",
+            "contribute": "Contribua",
+            "sponsor": "Patrocime"
+          },
+          "terms": {
+            "title": "Termos",
+            "community_guidelines": "Diretrizes da Comunidade"
+          },
+          "copyright": "A Equipe MafakaMC"
+        },
+        "SoftwareHeader": {
+          "downloads": "Downloads",
+          "documentation": "Documentação"
+        },
+        "SoftwareDownload": {
+          "downloads": "Downloads",
+          "get": "Obter",
+          "toggleExperimental": "Alternar para builds experimentais para ",
+          "toggleStable": "Voltar para builds estáveis ",
+          "builds": {
+            "title": "Builds antigas",
+            "description": {
+              "line1": "Procurando por versões antigas ou changelogs? Temos tudo!",
+              "line2": "Versões ainda mais antigas estão disponíveis em nosso <0><0>explorador de versões</0></0>."
+            }
+          }
+        }
+      }
+    },
+    "time": {
+      "second": "segundo",
+      "minute": "minuto",
+      "hour": "hora",
+      "day": "dia",
+      "past": " atrás",
+      "plural_past": "s atrás"
+    },
+    "error": {
+      "500": {
+        "title": "Error",
+        "description": "Pedimos desculpas pelo inconveniente. Se desejar, por favor, reporte o erro, isso nos ajudará a corrigir o problema.",
+        "report": "Reportar",
+        "refresh": "Atualizar"
+      },
+      "404": {
+        "title": "Não encontrado",
+        "description": "Não conseguimos encontrar a página solicitada. Se achar que isso é um erro, por favor, reporte o bug.",
+        "back": "Voltar",
+        "report": "Reportar"
+      },
+      "lang": "pt"
+    },
+    "Language": "Linguagem",
+    "name": "Português (BR)",
+    "translator": ""
+  }
