@@ -5,10 +5,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-import Logo from "@/assets/brand/logo.svg";
+import Logo from "@/assets/brand/mafaka.svg";
 import DiscordIcon from "@/assets/icons/fontawesome/discord-brands.svg";
 import GitHubIcon from "@/assets/icons/fontawesome/github-brands.svg";
-import ExternalUrlIcon from "@/assets/icons/heroicons/arrow-top-right-on-square.svg";
 import MenuIcon from "@/assets/icons/heroicons/menu.svg";
 import IconButton from "@/components/input/IconButton";
 import NavDropDown from "@/components/layout/NavDropDown";
@@ -71,16 +70,8 @@ const NavBar = ({ component }: NavBarProps) => {
           )}
         >
           <NavDropDown label={t("components.layout.NavBar.software")}>
-            <NavDropDownLink href="/software/leaves">Mafaka</NavDropDownLink>
+            <NavDropDownLink href="/software/mafaka">Mafaka</NavDropDownLink>
           </NavDropDown>
-          <NavLink
-            href=""
-            target="_blank"
-            className="inline-flex items-center"
-          >
-            {t("components.layout.NavBar.documentation")}
-            <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
-          </NavLink>
           <NavLink href="/team">{t("components.layout.NavBar.team")}</NavLink>
           <NavLink href="/contribute">
             {t("components.layout.NavBar.contribute")}

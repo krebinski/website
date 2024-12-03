@@ -24,7 +24,7 @@ export interface ProjectProps {
 }
 
 export const DownloadsContext = createContext<DownloadsContextProps>({
-  projectId: "mafaka",
+  projectId: "leaves",
   project: undefined,
   builds: undefined,
   version: "",
@@ -33,45 +33,72 @@ export const DownloadsContext = createContext<DownloadsContextProps>({
 
 const isVersionStable = async (
   project: string,
-  version: string,
+  version: string
 ): Promise<boolean> => {
   const { builds } = await getVersionBuilds(project, version);
-  for (let i = builds.length - 1; i >= 0; i--) {
-    if (builds[i].channel === "default") return true;
+
+  if (!builds || builds.length === 0) {
+    return false;
   }
 
-  return false;
+  return builds.some((build) => build.channel === "default");
 };
 
-export const getProjectProps = (id: string): GetStaticProps => {
+export const getProjectProps = (id: string): GetStaticProps<ProjectProps> => {
   return async () => {
-    const { project_name, versions, version_groups } = await getProject(id);
+    try {
+      const { project_name, versions = [], versions_groups = [] } = await getProject(id);
 
-    let latestStableVersion = versions[versions.length - 1];
-    for (let i = versions.length - 1; i >= 0; i--) {
-      if (await isVersionStable(id, versions[i])) {
-        latestStableVersion = versions[i];
-        break;
+      if (versions.length === 0) {
+        throw new Error(`No versions available for project ID: ${id}`);
       }
+
+      if (versions_groups.length === 0) {
+        throw new Error(`No version groups available for project ID: ${id}`);
+      }
+
+      // Determine the latest stable version
+      let latestStableVersion = versions[versions.length - 1];
+      for (let i = versions.length - 1; i >= 0; i--) {
+        if (await isVersionStable(id, versions[i])) {
+          latestStableVersion = versions[i];
+          break;
+        }
+      }
+
+      // Determine the latest experimental version
+      const latestExperimentalVersion =
+        latestStableVersion !== versions[versions.length - 1]
+          ? versions[versions.length - 1]
+          : null;
+
+      const project: ProjectDescriptor = {
+        name: project_name || "Unknown Project",
+        latestStableVersion,
+        latestExperimentalVersion,
+        latestVersionGroup: versions_groups[versions_groups.length - 1],
+      };
+
+      return {
+        props: {
+          project,
+        },
+        revalidate: 600, // Revalidate every 10 minutes
+      };
+    } catch (error) {
+      console.error("Error in getProjectProps:", error);
+
+      return {
+        props: {
+          project: {
+            name: "Unknown Project",
+            latestStableVersion: "unknown",
+            latestExperimentalVersion: null,
+            latestVersionGroup: "unknown",
+          },
+        },
+        revalidate: 600,
+      };
     }
-
-    const latestExperimentalVersion =
-      latestStableVersion !== versions[versions.length - 1]
-        ? versions[versions.length - 1]
-        : null;
-
-    const project: ProjectDescriptor = {
-      name: project_name,
-      latestStableVersion,
-      latestExperimentalVersion,
-      latestVersionGroup: version_groups[version_groups.length - 1],
-    };
-
-    return {
-      props: {
-        project,
-      },
-      revalidate: 600, // 10 minutes
-    };
   };
 };

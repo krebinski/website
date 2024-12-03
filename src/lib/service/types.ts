@@ -1,4 +1,4 @@
-export interface Prokect {
+export interface Project {
     project_id: string,
     project_name: string,
     versions_groups: string[];

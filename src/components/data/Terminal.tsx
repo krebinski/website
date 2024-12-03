@@ -222,7 +222,7 @@ export function Terminal({ project }: ProjectProps) {
 
       setSuccess(
         <InfoLog>
-          <span className="text-green-400">
+          <span className="text-purple-400">
             Done (2.274s)! For help, type &quot;help&quot;
           </span>
         </InfoLog>,
@@ -245,7 +245,7 @@ export function Terminal({ project }: ProjectProps) {
       <div className="w-full bg-gray-900 rounded-t-lg flex p-2 gap-2">
         <div className="w-2.5 h-2.5 bg-red-500 rounded-full" />
         <div className="w-2.5 h-2.5 bg-yellow-500 rounded-full" />
-        <div className="w-2.5 h-2.5 bg-green-500 rounded-full" />
+        <div className="w-2.5 h-2.5 bg-purple-500 rounded-full" />
       </div>
       <div className="max-h-74 p-4 font-mono text-xs text-white overflow-y-hidden flex flex-col-reverse">
         {input}
@@ -256,7 +256,7 @@ export function Terminal({ project }: ProjectProps) {
           <span className="text-gray-400">{loading}</span>
         </div>
         <div>
-          <span className="text-green-400">$ </span>
+          <span className="text-purple-400">$ </span>
           <span className="text-blue-400">{cmd}</span>
           <span>{args}</span>
         </div>

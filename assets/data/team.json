@@ -1,0 +1,35 @@
+[
+    {
+      "id": "core-team",
+      "members": [
+        {
+            "name": "Krebinski",
+            "avatar": "https://avatars.githubusercontent.com/u/176638958?v=4",
+            "discord": "krebinkkj_",
+            "github": "Krebinski"
+          }
+      ]
+    },
+    {
+      "id": "mafaka-developers",
+      "members": [
+        {
+            "name": "Krebinski",
+            "avatar": "https://avatars.githubusercontent.com/u/176638958?v=4",
+            "discord": "krebinkkj_",
+            "github": "Krebinski"
+          }
+      ]
+    },
+    {
+      "id": "web-developers",
+      "members": [
+        {
+          "name": "Krebinski",
+          "avatar": "https://avatars.githubusercontent.com/u/176638958?v=4",
+          "discord": "krebinkkj_",
+          "github": "Krebinski"
+        }
+      ]
+    }
+  ]

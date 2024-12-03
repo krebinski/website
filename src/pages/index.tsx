@@ -29,19 +29,12 @@ const Home: NextPage<ProjectProps> = ({ project }) => {
           <h1 className="font-medium leading-normal lg:(text-5xl leading-normal) text-4xl">
             {t("index.title.line1")}
             <br />
-            <span className="text-green-500">{t("index.title.line2")}</span>
+            <span className="text-purple-500">{t("index.title.line2")}</span>
           </h1>
           <p className="text-xl mt-4">{t("index.description")}</p>
           <div className="flex flex-row gap-4 mt-8">
             <Button variant="filled" href="/downloads">
               {t("index.downloads")}
-            </Button>
-            <Button
-              variant="outlined"
-              href="https://docs.leavesmc.org"
-              external
-            >
-              {t("index.documentation")}
             </Button>
           </div>
         </div>
@@ -51,20 +44,19 @@ const Home: NextPage<ProjectProps> = ({ project }) => {
       </header>
       <section
         id="software"
-        className="w-full pt-12 pb-8 bg-green-100 dark:bg-background-dark-80"
+        className="w-full pt-12 pb-8 bg-purple-100 dark:bg-background-dark-80"
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="font-semibold text-xl md:text-2xl px-6 lg:px-4 mb-4">
             <Trans i18nKey="index.software.title">
-              <span className="text-green-500" />
+              <span className="text-purple-500" />
             </Trans>
           </h2>
           <div className="grid md:(grid-cols-3 -ml-4) gap-2 px-2 xl:gap-4">
             <SoftwarePreview
               id="mafaka"
               name="Mafaka"
-              icon={MafakaIcon}
-              description={t("downloads.index.softwares.mafaka.description")}
+              description={t("downloads.index.softwares.leaves.description")}
             />
           </div>
         </div>
@@ -88,7 +80,7 @@ const Home: NextPage<ProjectProps> = ({ project }) => {
             <h2 className="font-semibold text-2xl md:text-4xl break-all">
               {t("index.image.1.title.powering")}&nbsp;
               {playerData ? (
-                <span className="text-green-500">{playerData[0][1]}+</span>
+                <span className="text-purple-500">{playerData[0][1]}+</span>
               ) : (
                 <Skeleton className="w-30 h-6 inline-block" />
               )}
@@ -106,4 +98,4 @@ const Home: NextPage<ProjectProps> = ({ project }) => {
 
 export default Home;
 
-export const getStaticProps = getProjectProps("mafaka");
+export const getStaticProps = getProjectProps("Leaves");
